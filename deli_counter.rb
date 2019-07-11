@@ -17,7 +17,7 @@ end
 def take_a_number(katz_deli, name)
   katz_deli.push(name)
   indexSize = katz_deli.size
-  puts "Welcome, " + katz_deli[-1] +". You are number " + indexSize.to_s +" in line."
+  puts "Welcome, " + katz_deli[-1] +". You are number "
 end
 
 def now_serving(katz_deli)
