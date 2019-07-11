@@ -6,7 +6,8 @@ def line(katz_deli)
   if katz_deli.size > 0
     baseString = "The line is currently: "
     katz_deli.each_with_index do |name, index|
-      puts baseString + (index + 1).to_s + ". " + name
+      number = index + 1
+      puts baseString + number.to_s + ". " + name
     end
   else
     puts "The line is currently empty."
