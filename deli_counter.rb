@@ -4,7 +4,7 @@ katz_deli = []
 
 def line(katz_deli)
   if katz_deli.size > 0
-    baseString = "The line is currently: "1. Ada 2. Grace 3. Kent
+    baseString = "The line is currently: "
     katz_deli.each_with_index do |name, index|
       puts baseString + (index + 1).to_s + ". " + name
     end
