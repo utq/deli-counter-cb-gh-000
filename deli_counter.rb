@@ -7,7 +7,7 @@ def line(katz_deli)
     baseString = "The line is currently: "
     katz_deli.each_with_index do |name, index|
       number = index + 1
-      puts baseString + number.to_s + ". " + name
+      puts baseString + number.to_S + ". " + name
     end
   else
     puts "The line is currently empty."
@@ -17,9 +17,9 @@ end
 def take_a_number(katz_deli, name)
   katz_deli.push(name)
   indexSize = katz_deli.size
-  puts "Welcome, " + katz_deli[-1] +". You are number "
+  puts "Welcome, " + katz_deli[-1] +". You are number " + indexSize.to_S + " in line."
 end
 
 def now_serving(katz_deli)
-  puts "Currently serving" + katz_deli.pop
+  puts "Currently serving" + katz_deli.unshift
 end
